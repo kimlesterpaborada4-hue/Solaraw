@@ -1,0 +1,921 @@
+[gd_scene format=3 uid="uid://cohfr8xut3kwd"]
+
+[ext_resource type="Script" uid="uid://brhypg35kctdn" path="res://SimulationWorkspace.gd" id="1_es1yn"]
+[ext_resource type="Script" uid="uid://e1xbow8yejoy" path="res://VirtualJoystick.gd" id="2_ll8f8"]
+[ext_resource type="Texture2D" uid="uid://7jab6gwayvba" path="res://BlueTiles.jpg" id="2_r7kql"]
+[ext_resource type="ArrayMesh" uid="uid://dhm0f6tknjuua" path="res://ChargeController.obj" id="2_sy415"]
+[ext_resource type="ArrayMesh" uid="uid://cwc2pw7b4i1kd" path="res://untitled.obj" id="3_vdy5k"]
+[ext_resource type="ArrayMesh" uid="uid://c315c22vbwx3o" path="res://BatteryBank.obj" id="4_ll8f8"]
+[ext_resource type="Script" uid="uid://dch84nyq5tbgv" path="res://FlexiblePVWire.gd" id="6_ll8f8"]
+[ext_resource type="Script" uid="uid://252tu3ltqjwe" path="res://FasteningController.gd" id="8_vygpj"]
+[ext_resource type="ArrayMesh" uid="uid://c06f8n458tdxt" path="res://Screw.obj" id="9_qgdqj"]
+[ext_resource type="ArrayMesh" uid="uid://4mqhwcqf2lvi" path="res://table.obj" id="10_qgdqj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7kql"]
+albedo_texture = ExtResource("2_r7kql")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3fvu4"]
+albedo_color = Color(0.21548337, 0.38150698, 0.7463276, 1)
+albedo_texture = ExtResource("2_r7kql")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vygpj"]
+size = Vector3(10, 0.2, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bwg07"]
+size = Vector3(1.8, 0.3, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qgdqj"]
+albedo_color = Color(0.86925834, 0.88313246, 0.7594625, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ll8f8"]
+size = Vector3(0.4, 0.5, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r7kql"]
+size = Vector3(0.32180175, 0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ll8f8"]
+albedo_color = Color(0.7670247, 2.5268644e-06, 9.62615e-07, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r7kql"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ca7p6"]
+albedo_color = Color(0.89827543, 2.5990605e-06, 1.2513996e-06, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ll8f8"]
+radius = 0.08
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vygpj"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qgdqj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ao62n"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ofux"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3fvu4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4oxsb"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb8wk"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5l0xy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ok5d7"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vofxi"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d2fn6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_upngs"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ubwo6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_puouq"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ca7p6"]
+size = Vector3(0.048828125, 0.05734253, 0.035476685)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ll8f8"]
+radius = 0.3
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5l0xy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qgdqj"]
+size = Vector3(10, 3, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2fn6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ao62n"]
+size = Vector3(10, 3, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubwo6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ofux"]
+size = Vector3(10, 3, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3fvu4"]
+size = Vector3(10, 3, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nb8wk"]
+size = Vector3(0.5920937, 0.37296873, 0.16296089)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_axvig"]
+size = Vector3(1.5090821, 2.1954103, 4.186616)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vygpj"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qgdqj"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ao62n"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2ofux"]
+radius = 0.15
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vygpj"]
+top_radius = 0.06
+bottom_radius = 0.06
+height = 0.025
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qgdqj"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.12
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5l0xy"]
+size = Vector3(1.7, 0.1, 1.090039)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axvig"]
+albedo_color = Color(7.2196127e-07, 0, 0.39342433, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sy415"]
+size = Vector3(1.7, 0.1, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4oxsb"]
+size = Vector3(1.7, 0.08, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ok5d7"]
+size = Vector3(0.45251465, 0.725708, 0.16183472)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vdy5k"]
+size = Vector3(1.5823212, 7.349832, 4.6242566)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3fvu4"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4oxsb"]
+radius = 0.15
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vofxi"]
+size = Vector3(0.18377244, 0.4428711, 0.47607422)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_es1yn"]
+size = Vector3(0.9684326, 2.1662965, 2.3377442)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nb8wk"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5l0xy"]
+radius = 0.15
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6wa7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p4svb"]
+albedo_color = Color(0.92680967, 0.73771316, 3.85046e-07, 1)
+
+[node name="SimulationWorkspace" type="Node3D" unique_id=2058656672]
+script = ExtResource("1_es1yn")
+wire_start_target_paths = Array[NodePath]([NodePath("SolarPanel_Physics/SolarPanel_1/Panel_Positive_Terminal"), NodePath("SolarPanel_Physics/SolarPanel_1/Panel_Negative_Terminal"), NodePath("ChargeController_Physics/ChargeController/Controller_Battery_Positive"), NodePath("ChargeController_Physics/ChargeController/Controller_Battery_Negative"), NodePath("BatteryBank_Physics/BatteryBank/Battery_Positive_Terminal"), NodePath("BatteryBank_Physics/BatteryBank/Battery_Negative_Terminal")])
+
+[node name="MountingRail_1" type="CSGBox3D" parent="." unique_id=2113681922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4199829, 0.15, -0.4718262)
+size = Vector3(4, 0.1, 0.1)
+
+[node name="MountingRail_2" type="CSGBox3D" parent="." unique_id=342101410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4199829, 0.15, 0.72817385)
+size = Vector3(4, 0.1, 0.1)
+
+[node name="RoofMockup" type="CSGBox3D" parent="." unique_id=1664661267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4199829, 0, 0.12817383)
+material_override = SubResource("StandardMaterial3D_r7kql")
+size = Vector3(8.724976, 0.2, 7.4838867)
+material = SubResource("StandardMaterial3D_3fvu4")
+
+[node name="PlatformBody" type="StaticBody3D" parent="RoofMockup" unique_id=1856695616]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoofMockup/PlatformBody" unique_id=679216352]
+shape = SubResource("BoxShape3D_vygpj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1577692276]
+transform = Transform3D(0.5948312, -0.5041025, 0.6261441, -0.33302513, 0.5544017, 0.76271427, -0.73162144, -0.6622081, 0.16189666, -0.5400226, 5.0330625, 0.32211018)
+light_energy = 0.776
+shadow_enabled = true
+shadow_opacity = 0.58
+
+[node name="PanelSnapZone" type="Area3D" parent="." unique_id=1223771376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0.104806185)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PanelSnapZone" unique_id=474059348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09324658, 0)
+shape = SubResource("BoxShape3D_bwg07")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=18504915]
+
+[node name="InstructionPanel" type="PanelContainer" parent="HUD" unique_id=1038597961]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -483.0
+offset_top = 62.0
+offset_right = 483.0
+offset_bottom = -892.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="VBox" type="VBoxContainer" parent="HUD/InstructionPanel" unique_id=1962593577]
+layout_mode = 2
+
+[node name="StepTitleLabel" type="Label" parent="HUD/InstructionPanel/VBox" unique_id=45403723]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Step 1: Mount Solar Panel"
+
+[node name="InstructionLabel" type="Label" parent="HUD/InstructionPanel/VBox" unique_id=1557161767]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Drag the solar panel onto the mounting rails."
+
+[node name="SafetyAlertLabel" type="Label" parent="HUD/InstructionPanel/VBox" unique_id=951081444]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "OSH / PEC Reminder: Ensure mounting rails are secured before placing PV modules."
+
+[node name="WinScreen" type="Control" parent="HUD" unique_id=1908260484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundTint" type="ColorRect" parent="HUD/WinScreen" unique_id=451424469]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD/WinScreen" unique_id=2035742644]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HUD/WinScreen/CenterContainer" unique_id=276123265]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/WinScreen/CenterContainer/PanelContainer" unique_id=1590337128]
+layout_mode = 2
+
+[node name="WinTitleLabel" type="Label" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=29466523]
+layout_mode = 2
+text = "SYSTEM COMMISSIONED SUCCESSFULLY!"
+horizontal_alignment = 1
+
+[node name="WinDescLabel" type="Label" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=774196489]
+layout_mode = 2
+text = "All TESDA & PEC standards met. System nominal."
+horizontal_alignment = 1
+
+[node name="ScoreTitleLabel" type="Label" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=1197614792]
+layout_mode = 2
+text = "PERFORMANCE EVALUATION"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=702122502]
+layout_mode = 2
+
+[node name="FeedbackTextLabel" type="RichTextLabel" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=606896235]
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="AccuracyLabel" type="Label" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=108696410]
+layout_mode = 2
+
+[node name="TimeLabel" type="Label" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=1466146003]
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=2147332950]
+layout_mode = 2
+text = "Run Simulation Again"
+
+[node name="CloseButton" type="Button" parent="HUD/WinScreen/CenterContainer/PanelContainer/VBoxContainer" unique_id=826950874]
+layout_mode = 2
+text = "Return to Menu"
+
+[node name="MobileControls" type="Control" parent="HUD" unique_id=125653445]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MoveJoystick" type="Control" parent="HUD/MobileControls" unique_id=202262048]
+layout_mode = 1
+anchor_left = 0.084895834
+anchor_top = 0.63611114
+anchor_right = 0.29479167
+anchor_bottom = 0.94166666
+offset_top = -6.1035156e-05
+grow_vertical = 0
+script = ExtResource("2_ll8f8")
+joystick_radius = 100.0
+knob_radius = 75.0
+metadata/_edit_use_anchors_ = true
+
+[node name="LookJoystick" type="Control" parent="HUD/MobileControls" unique_id=1731875504]
+layout_mode = 1
+anchor_left = 0.67700005
+anchor_top = 0.61300004
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.840088
+offset_top = -0.040039063
+offset_right = 4.0
+offset_bottom = 5.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("2_ll8f8")
+joystick_radius = 100.0
+knob_radius = 75.0
+
+[node name="Crosshair" type="Label" parent="HUD/MobileControls" unique_id=859259987]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -48.0
+offset_right = 20.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 70
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GrabButton" type="Button" parent="HUD/MobileControls" unique_id=2108342634]
+custom_minimum_size = Vector2(120, 70)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -242.0
+offset_top = -591.0
+offset_right = -100.0
+offset_bottom = -514.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "GRAB"
+
+[node name="FastenButton" type="Button" parent="HUD/MobileControls" unique_id=2056118608]
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 337.0
+offset_right = 1831.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 50
+text = "FASTEN"
+
+[node name="PauseButton" type="Button" parent="HUD" unique_id=711518724]
+offset_left = 52.0
+offset_top = 53.0
+offset_right = 234.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 60
+text = "Pause"
+
+[node name="PauseMenu" type="Panel" parent="HUD" unique_id=173211324]
+modulate = Color(0.0784832, 2.2140146e-06, 0.40742192, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD/PauseMenu" unique_id=1581278683]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/PauseMenu/CenterContainer" unique_id=1976606398]
+layout_mode = 2
+
+[node name="PauseTitle" type="Label" parent="HUD/PauseMenu/CenterContainer/VBoxContainer" unique_id=828083196]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 70
+text = "GAME PAUSED"
+
+[node name="ResumeButton" type="Button" parent="HUD/PauseMenu/CenterContainer/VBoxContainer" unique_id=1296339135]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+text = "RESUME"
+
+[node name="RestartButton" type="Button" parent="HUD/PauseMenu/CenterContainer/VBoxContainer" unique_id=35915472]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+text = "RESTART"
+
+[node name="MainMenuButton" type="Button" parent="HUD/PauseMenu/CenterContainer/VBoxContainer" unique_id=2088871983]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+text = "MAIN MENU"
+
+[node name="ElectricBoard" type="CSGBox3D" parent="." unique_id=1801244980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86870116, -2.8045564)
+size = Vector3(1.8, 1.8374023, 0.1)
+material = SubResource("StandardMaterial3D_qgdqj")
+
+[node name="ControllerSnapZone" type="Area3D" parent="." unique_id=1442502663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 1.0750273, -2.5952487)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ControllerSnapZone" unique_id=1699605014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.044906974)
+shape = SubResource("BoxShape3D_ll8f8")
+
+[node name="InverterSnapZone" type="Area3D" parent="." unique_id=1143431366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.2117746, -2.5691285)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InverterSnapZone" unique_id=283226605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.09477925)
+shape = SubResource("BoxShape3D_ll8f8")
+
+[node name="BatterySnapZone" type="Area3D" parent="." unique_id=1820600271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3892793, -2.4817958)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BatterySnapZone" unique_id=1533215973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008883193, 0, 0)
+shape = SubResource("BoxShape3D_r7kql")
+
+[node name="WiringHarness" type="Node3D" parent="." unique_id=822385728]
+
+[node name="Wire_1_Panel_Positive" type="MeshInstance3D" parent="WiringHarness" unique_id=1639561497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4514463, 1.7501895, -1.3902334)
+material_override = SubResource("StandardMaterial3D_ll8f8")
+mesh = SubResource("ArrayMesh_r7kql")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_1_Panel_Positive" unique_id=1704788027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06551814, -0.5119536, -0.6180645)
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_1_Panel_Positive/StartMarker" unique_id=390491537]
+material_override = SubResource("StandardMaterial3D_ca7p6")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_1_Panel_Positive/StartMarker/StartConnector" unique_id=500436304]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_1_Panel_Positive/StartMarker/StartConnector/ConnectorArea" unique_id=1897494710]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_1_Panel_Positive" unique_id=1816138525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.23324788)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_1_Panel_Positive/EndMarker" unique_id=315421494]
+material_override = SubResource("StandardMaterial3D_ca7p6")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_1_Panel_Positive/EndMarker/EndConnector" unique_id=125658354]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_1_Panel_Positive/EndMarker/EndConnector/ConnectorArea" unique_id=650949367]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Wire_3_Controller_Battery_Positive" type="MeshInstance3D" parent="WiringHarness" unique_id=1227627873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12797892, 1.7501895, 1.5965217)
+material_override = SubResource("StandardMaterial3D_vygpj")
+mesh = SubResource("ArrayMesh_qgdqj")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive" unique_id=546406390]
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/StartMarker" unique_id=781909835]
+material_override = SubResource("StandardMaterial3D_ao62n")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/StartMarker/StartConnector" unique_id=660748561]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/StartMarker/StartConnector/ConnectorArea" unique_id=1652062973]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive" unique_id=1718923559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5742656, 0, 0)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/EndMarker" unique_id=1362772042]
+material_override = SubResource("StandardMaterial3D_ao62n")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/EndMarker/EndConnector" unique_id=57348275]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_3_Controller_Battery_Positive/EndMarker/EndConnector/ConnectorArea" unique_id=729327687]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Wire_4_Controller_Battery_Negative" type="MeshInstance3D" parent="WiringHarness" unique_id=417237026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3388227, 1.7501895, 0.84384704)
+material_override = SubResource("StandardMaterial3D_2ofux")
+mesh = SubResource("ArrayMesh_3fvu4")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative" unique_id=1793751256]
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/StartMarker" unique_id=1996754078]
+material_override = SubResource("StandardMaterial3D_4oxsb")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/StartMarker/StartConnector" unique_id=50820707]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/StartMarker/StartConnector/ConnectorArea" unique_id=474413700]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative" unique_id=1251039204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5742656, 0, 0)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/EndMarker" unique_id=1990419215]
+material_override = SubResource("StandardMaterial3D_4oxsb")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/EndMarker/EndConnector" unique_id=524564615]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_4_Controller_Battery_Negative/EndMarker/EndConnector/ConnectorArea" unique_id=1295387384]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Wire_2_Panel_Negative" type="MeshInstance3D" parent="WiringHarness" unique_id=668866934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3388227, 1.7501895, 1.8478003)
+material_override = SubResource("StandardMaterial3D_nb8wk")
+mesh = SubResource("ArrayMesh_5l0xy")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_2_Panel_Negative" unique_id=930025196]
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_2_Panel_Negative/StartMarker" unique_id=1977709809]
+material_override = SubResource("StandardMaterial3D_ok5d7")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_2_Panel_Negative/StartMarker/StartConnector" unique_id=1804226107]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_2_Panel_Negative/StartMarker/StartConnector/ConnectorArea" unique_id=1934646942]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_2_Panel_Negative" unique_id=1779076782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5742656, 0, 0)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_2_Panel_Negative/EndMarker" unique_id=314170287]
+material_override = SubResource("StandardMaterial3D_4oxsb")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_2_Panel_Negative/EndMarker/EndConnector" unique_id=96448492]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_2_Panel_Negative/EndMarker/EndConnector/ConnectorArea" unique_id=790841518]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Wire_5_Battery_Inverter_Positive" type="MeshInstance3D" parent="WiringHarness" unique_id=1502626864]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3388227, 1.7501895, 2.1867957)
+material_override = SubResource("StandardMaterial3D_vofxi")
+mesh = SubResource("ArrayMesh_d2fn6")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive" unique_id=996417391]
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/StartMarker" unique_id=1355580870]
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/StartMarker/StartConnector" unique_id=1608833404]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/StartMarker/StartConnector/ConnectorArea" unique_id=699589114]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive" unique_id=29355251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5742656, 0, 0)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/EndMarker" unique_id=330592386]
+material_override = SubResource("StandardMaterial3D_4oxsb")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/EndMarker/EndConnector" unique_id=511204649]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_5_Battery_Inverter_Positive/EndMarker/EndConnector/ConnectorArea" unique_id=654743328]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Wire_6_Battery_Inverter_Negative" type="MeshInstance3D" parent="WiringHarness" unique_id=336481989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3388227, 1.7501895, 2.6516438)
+material_override = SubResource("StandardMaterial3D_upngs")
+mesh = SubResource("ArrayMesh_ubwo6")
+script = ExtResource("6_ll8f8")
+
+[node name="StartMarker" type="Marker3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative" unique_id=466712102]
+
+[node name="StartConnector" type="MeshInstance3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/StartMarker" unique_id=280585275]
+material_override = SubResource("StandardMaterial3D_puouq")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/StartMarker/StartConnector" unique_id=1381781778]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/StartMarker/StartConnector/ConnectorArea" unique_id=703094294]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="EndMarker" type="Marker3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative" unique_id=778833934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5742656, 0, 0)
+
+[node name="EndConnector" type="MeshInstance3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/EndMarker" unique_id=369182336]
+material_override = SubResource("StandardMaterial3D_4oxsb")
+
+[node name="ConnectorArea" type="Area3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/EndMarker/EndConnector" unique_id=1315337957]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WiringHarness/Wire_6_Battery_Inverter_Negative/EndMarker/EndConnector/ConnectorArea" unique_id=1341657690]
+shape = SubResource("SphereShape3D_ll8f8")
+
+[node name="Step4ClickArea" type="Area3D" parent="." unique_id=556526820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60703, 0.9627005, -2.6155303)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step4ClickArea" unique_id=2144871533]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.17432892, 0.29937106, 0.1730671)
+shape = SubResource("BoxShape3D_ca7p6")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1692792046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34467876, -0.026427865)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=431442905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8072262, 0.74896264)
+shape = SubResource("CapsuleShape3D_ll8f8")
+
+[node name="CameraPivot" type="Node3D" parent="Player" unique_id=1498171095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0463807, 1.4476745, 0.41296697)
+
+[node name="WorkspaceCamera" type="Camera3D" parent="Player/CameraPivot" unique_id=607113096]
+current = true
+
+[node name="Wall_Back" type="CSGBox3D" parent="." unique_id=2091932724]
+transform = Transform3D(-0.9995588, 0, -0.029701069, 0, 1, 0, 0.029701069, 0, -0.9995588, 0.020672321, 1.2757802, 3.7521095)
+size = Vector3(10, 3, 0.2)
+material = SubResource("StandardMaterial3D_5l0xy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall_Back" unique_id=1679848178]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Back/StaticBody3D" unique_id=1964693382]
+shape = SubResource("BoxShape3D_qgdqj")
+
+[node name="Wall_Back2" type="CSGBox3D" parent="." unique_id=114390388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021, 1.276, -3.2425714)
+size = Vector3(10, 3, 0.2)
+material = SubResource("StandardMaterial3D_d2fn6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall_Back2" unique_id=1929345488]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Back2/StaticBody3D" unique_id=1840647924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.09754276)
+shape = SubResource("BoxShape3D_ao62n")
+
+[node name="Wall_Back3" type="CSGBox3D" parent="." unique_id=555045479]
+transform = Transform3D(-0.004921891, 0, 0.9999881, 0, 1, 0, -0.9999881, 0, -0.004921891, 3.7313533, 1.276, 0.5139539)
+size = Vector3(8.755859, 3, 0.2)
+material = SubResource("StandardMaterial3D_ubwo6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall_Back3" unique_id=689823483]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Back3/StaticBody3D" unique_id=550472222]
+shape = SubResource("BoxShape3D_2ofux")
+
+[node name="Wall_Back4" type="CSGBox3D" parent="." unique_id=235102012]
+transform = Transform3D(0.032073673, 0, -0.9994855, 0, 1, 0, 0.9994855, 0, 0.032073673, -4.23125, 1.276, 0.5139539)
+size = Vector3(8.755859, 3, 0.2)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall_Back4" unique_id=71520140]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Back4/StaticBody3D" unique_id=1146848209]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 4.452467e-05, 0, -0.0013873577)
+shape = SubResource("BoxShape3D_3fvu4")
+
+[node name="ChargeController_Physics" type="RigidBody3D" parent="." unique_id=1863099059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.131, 0.349, 1.05)
+mass = 5.0
+continuous_cd = true
+contact_monitor = true
+linear_damp = 0.5
+angular_damp = 2.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics" unique_id=973829046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010593891, -0.041953117, -0.02569747)
+shape = SubResource("BoxShape3D_nb8wk")
+
+[node name="ChargeController" type="MeshInstance3D" parent="ChargeController_Physics" unique_id=870544313]
+transform = Transform3D(0.0017016578, 0, -0.14999035, 0, 0.15, 0, 0.14999035, 0, 0.0017016578, -0.00033402443, -0.00024282932, 1.513958e-05)
+mesh = ExtResource("2_sy415")
+
+[node name="Area3D" type="Area3D" parent="ChargeController_Physics/ChargeController" unique_id=891938052]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics/ChargeController/Area3D" unique_id=1542134490]
+transform = Transform3D(0.9999999, 0, -3.585592e-07, 0, 0.99999976, 0, 3.585592e-07, 0, 0.9999999, -0.19497013, -0.06450176, -0.075639725)
+shape = SubResource("BoxShape3D_axvig")
+
+[node name="Controller_PV_Positive" type="Marker3D" parent="ChargeController_Physics/ChargeController" unique_id=1210281432]
+transform = Transform3D(0.9999999, 0, -1.8626451e-09, 0, 0.99999976, 0, 1.8626451e-09, 0, 0.9999999, -0.00954628, -0.86602485, 0.8414564)
+
+[node name="TerminalArea" type="Area3D" parent="ChargeController_Physics/ChargeController/Controller_PV_Positive" unique_id=1575123352]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics/ChargeController/Controller_PV_Positive/TerminalArea" unique_id=216107058]
+shape = SubResource("SphereShape3D_vygpj")
+
+[node name="Controller_PV_Negative" type="Marker3D" parent="ChargeController_Physics/ChargeController" unique_id=1369287535]
+transform = Transform3D(0.9999999, 0, -1.8626451e-09, 0, 0.99999976, 0, 1.8626451e-09, 0, 0.9999999, -0.004589081, -0.85695004, 0.40444088)
+
+[node name="TerminalArea" type="Area3D" parent="ChargeController_Physics/ChargeController/Controller_PV_Negative" unique_id=534874594]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics/ChargeController/Controller_PV_Negative/TerminalArea" unique_id=968742033]
+shape = SubResource("SphereShape3D_qgdqj")
+
+[node name="Controller_Battery_Positive" type="Marker3D" parent="ChargeController_Physics/ChargeController" unique_id=1977822512]
+transform = Transform3D(0.9999999, 0, -9.313226e-10, 0, 0.9999998, 0, 9.313226e-10, 0, 0.9999999, 0.0033931732, -0.8709574, -0.29912186)
+
+[node name="TerminalArea" type="Area3D" parent="ChargeController_Physics/ChargeController/Controller_Battery_Positive" unique_id=953081228]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics/ChargeController/Controller_Battery_Positive/TerminalArea" unique_id=2124929847]
+shape = SubResource("SphereShape3D_ao62n")
+
+[node name="Controller_Battery_Negative" type="Marker3D" parent="ChargeController_Physics/ChargeController" unique_id=131462281]
+transform = Transform3D(0.9999999, 0, -9.313226e-10, 0, 0.9999998, 0, 9.313226e-10, 0, 0.9999999, 0.0091228485, -0.86905897, -0.8041725)
+
+[node name="TerminalArea" type="Area3D" parent="ChargeController_Physics/ChargeController/Controller_Battery_Negative" unique_id=1829217593]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeController_Physics/ChargeController/Controller_Battery_Negative/TerminalArea" unique_id=1624307749]
+shape = SubResource("SphereShape3D_2ofux")
+
+[node name="Screw_1" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController" unique_id=2051179628 groups=["charge_controller_screws"]]
+transform = Transform3D(0.05587336, 0.99837935, -0.010711228, -0.9983803, 0.055751827, -0.011326732, -0.010711223, 0.011326732, 0.9998778, -0.7040558, 0.5311475, 1.6927328)
+mesh = SubResource("CylinderMesh_vygpj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController/Screw_1" unique_id=1035634672]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, -0.05594492, 0)
+mesh = SubResource("CylinderMesh_qgdqj")
+
+[node name="ScrewContactPoint" type="Marker3D" parent="ChargeController_Physics/ChargeController/Screw_1" unique_id=1784544510]
+
+[node name="Screw_3" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController" unique_id=334440922 groups=["charge_controller_screws"]]
+transform = Transform3D(0.05587336, 0.9983793, -0.0107112285, -0.9983803, 0.055751827, -0.011326732, -0.010711223, 0.011326731, 0.99987775, -0.7040558, -0.547696, 1.6927328)
+mesh = SubResource("CylinderMesh_vygpj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController/Screw_3" unique_id=824162863]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, -0.05594492, 0)
+mesh = SubResource("CylinderMesh_qgdqj")
+
+[node name="ScrewContactPoint" type="Marker3D" parent="ChargeController_Physics/ChargeController/Screw_3" unique_id=566976037]
+
+[node name="Screw_4" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController" unique_id=636697347 groups=["charge_controller_screws"]]
+transform = Transform3D(0.05587336, 0.9983792, -0.010711228, -0.9983803, 0.055751827, -0.011326732, -0.010711223, 0.01132673, 0.99987763, -0.670414, -0.5707735, -1.2726307)
+mesh = SubResource("CylinderMesh_vygpj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController/Screw_4" unique_id=1274316754]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, -0.05594492, 0)
+mesh = SubResource("CylinderMesh_qgdqj")
+
+[node name="ScrewContactPoint" type="Marker3D" parent="ChargeController_Physics/ChargeController/Screw_4" unique_id=1101350526]
+
+[node name="Screw_2" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController" unique_id=739566475 groups=["charge_controller_screws"]]
+transform = Transform3D(0.05587336, 0.9983793, -0.0107112285, -0.9983803, 0.055751827, -0.011326732, -0.010711223, 0.011326731, 0.99987775, -0.6701851, 0.5311475, -1.292778)
+mesh = SubResource("CylinderMesh_vygpj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ChargeController_Physics/ChargeController/Screw_2" unique_id=27079062]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, -0.05594492, 0)
+mesh = SubResource("CylinderMesh_qgdqj")
+
+[node name="ScrewContactPoint" type="Marker3D" parent="ChargeController_Physics/ChargeController/Screw_2" unique_id=2029337821]
+
+[node name="SolarPanel_Physics" type="RigidBody3D" parent="." unique_id=1440625201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5263191, 0.22114116, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SolarPanel_Physics" unique_id=258992259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44683695, 0.17616224, -0.0049805045)
+shape = SubResource("BoxShape3D_5l0xy")
+
+[node name="SolarPanel_1" type="CSGBox3D" parent="SolarPanel_Physics" unique_id=1092304457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44159973, 0.2, 0)
+size = Vector3(1.7, 0.08, 1.1)
+material = SubResource("StandardMaterial3D_axvig")
+
+[node name="Area3D" type="Area3D" parent="SolarPanel_Physics/SolarPanel_1" unique_id=1652650004]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SolarPanel_Physics/SolarPanel_1/Area3D" unique_id=564937192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00039958954, 0, 0)
+shape = SubResource("BoxShape3D_sy415")
+
+[node name="Panel_Positive_Terminal" type="Marker3D" parent="SolarPanel_Physics/SolarPanel_1" unique_id=1384651376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.06, -0.45)
+
+[node name="Panel_Negative_Terminal" type="Marker3D" parent="SolarPanel_Physics/SolarPanel_1" unique_id=363705090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.06, -0.45)
+
+[node name="PanelPhysicsBody" type="StaticBody3D" parent="SolarPanel_Physics/SolarPanel_1" unique_id=2116613370]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SolarPanel_Physics/SolarPanel_1/PanelPhysicsBody" unique_id=1933259008]
+shape = SubResource("BoxShape3D_4oxsb")
+
+[node name="Inverter_Physics" type="RigidBody3D" parent="." unique_id=598800968]
+mass = 2.0
+gravity_scale = 0.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Inverter_Physics" unique_id=1870200880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.206789, 0.7572957, 1.4400492)
+shape = SubResource("BoxShape3D_ok5d7")
+
+[node name="Inverter" type="MeshInstance3D" parent="Inverter_Physics" unique_id=678504407]
+transform = Transform3D(-0.003905796, 0, -0.19996186, 0, 0.2, 0, 0.19996186, 0, -0.003905796, -2.2, 0.5875704, 1.4375216)
+mesh = ExtResource("3_vdy5k")
+
+[node name="Area3D" type="Area3D" parent="Inverter_Physics/Inverter" unique_id=406154965]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Inverter_Physics/Inverter/Area3D" unique_id=124229689]
+transform = Transform3D(0.5, 0, 0, 0, 0.49999177, 0, 0, 0, 0.5, 0.020401955, 0.84078693, 0.027139664)
+shape = SubResource("BoxShape3D_vdy5k")
+
+[node name="Inverter_Positive_Terminal" type="Marker3D" parent="Inverter_Physics/Inverter" unique_id=1917071887]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 0, 0, 0, 1, 0.009249687, -0.9577608, 0.47357273)
+
+[node name="TerminalArea" type="Area3D" parent="Inverter_Physics/Inverter/Inverter_Positive_Terminal" unique_id=1643645555]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Inverter_Physics/Inverter/Inverter_Positive_Terminal/TerminalArea" unique_id=1255932492]
+shape = SubResource("SphereShape3D_3fvu4")
+
+[node name="Inverter_Negative_Terminal" type="Marker3D" parent="Inverter_Physics/Inverter" unique_id=1150558804]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, -0.958, 0)
+
+[node name="TerminalArea" type="Area3D" parent="Inverter_Physics/Inverter/Inverter_Negative_Terminal" unique_id=1071128447]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Inverter_Physics/Inverter/Inverter_Negative_Terminal/TerminalArea" unique_id=1488212153]
+shape = SubResource("SphereShape3D_4oxsb")
+
+[node name="BatteryBank_Physics" type="RigidBody3D" parent="." unique_id=1747034744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4446905, 0.6599934, -1.2687035)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BatteryBank_Physics" unique_id=1048809157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12539887, -0.2165032, 0.28686523)
+shape = SubResource("BoxShape3D_vofxi")
+
+[node name="BatteryBank" type="MeshInstance3D" parent="BatteryBank_Physics" unique_id=1391084453]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.22469044, -0.20442098, 0.27095115)
+mesh = ExtResource("4_ll8f8")
+
+[node name="Area3D" type="Area3D" parent="BatteryBank_Physics/BatteryBank" unique_id=2113756944]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BatteryBank_Physics/BatteryBank/Area3D" unique_id=86204601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49468994, -0.024383903, 0.05964327)
+shape = SubResource("BoxShape3D_es1yn")
+
+[node name="Battery_Positive_Terminal" type="Marker3D" parent="BatteryBank_Physics/BatteryBank" unique_id=1472043443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7627983, 1.0600946, 0)
+
+[node name="TerminalArea" type="Area3D" parent="BatteryBank_Physics/BatteryBank/Battery_Positive_Terminal" unique_id=750116434]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BatteryBank_Physics/BatteryBank/Battery_Positive_Terminal/TerminalArea" unique_id=176237695]
+shape = SubResource("SphereShape3D_nb8wk")
+
+[node name="Battery_Negative_Terminal" type="Marker3D" parent="BatteryBank_Physics/BatteryBank" unique_id=168106734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34527588, 1.0596404, 0)
+
+[node name="TerminalArea" type="Area3D" parent="BatteryBank_Physics/BatteryBank/Battery_Negative_Terminal" unique_id=939782464]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BatteryBank_Physics/BatteryBank/Battery_Negative_Terminal/TerminalArea" unique_id=255914801]
+shape = SubResource("SphereShape3D_5l0xy")
+
+[node name="FasteningController" type="Node3D" parent="." unique_id=763056010]
+script = ExtResource("8_vygpj")
+camera_path = NodePath("../Player/CameraPivot/WorkspaceCamera")
+focus_marker_path = NodePath("ScrewFocusCamera")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FasteningController" unique_id=1460872408]
+
+[node name="ScrewFocusCamera" type="Marker3D" parent="FasteningController" unique_id=1342865471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42010242, 1.3418165, -2.0340981)
+
+[node name="ScrewdriverWorldTarget" type="Marker3D" parent="FasteningController" unique_id=1545614010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3852613, 0.39689127, 1.0157648)
+
+[node name="Screwdriver" type="Node3D" parent="." unique_id=871192262]
+transform = Transform3D(-0.9993335, 0, 0.036504176, 0, 1, 0, -0.036504176, 0, -0.9993335, 0, 0, 3.860548)
+
+[node name="ScrewdriverMesh" type="MeshInstance3D" parent="Screwdriver" unique_id=233890480]
+transform = Transform3D(0.0004274689, 0, 0.03907943, 0, 0.042526163, 0, -0.06428329, 0, 0.00025986962, -0.0024894923, 0.74399126, 1.9944559)
+mesh = ExtResource("9_qgdqj")
+surface_material_override/0 = SubResource("StandardMaterial3D_v6wa7")
+surface_material_override/1 = SubResource("StandardMaterial3D_p4svb")
+
+[node name="ToolTip" type="Marker3D" parent="Screwdriver" unique_id=1797275705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.005108252, 0.7541581, 2.3286326)
+
+[node name="ScrewdriverStart" type="Marker3D" parent="Screwdriver" unique_id=315242217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.743324, 1.7462249)
+
+[node name="ScrewdriverTarget" type="Marker3D" parent="Screwdriver" unique_id=306779115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3860142, 0.4282809, 0.9501364)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1423151825]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.082377195, 0.27924854, 2.1054265)
+mesh = ExtResource("10_qgdqj")

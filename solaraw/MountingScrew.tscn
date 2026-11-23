@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://baecmmeg0q8jj"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1qjrg"]
+top_radius = 0.006
+bottom_radius = 0.006
+height = 0.035
+radial_segments = 16
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j02se"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 0.008
+radial_segments = 16
+
+[node name="MountingScrews" type="Node3D" unique_id=1641348318]
+
+[node name="ScrewShaft" type="MeshInstance3D" parent="." unique_id=1533062316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.071301304, 0)
+mesh = SubResource("CylinderMesh_1qjrg")
+
+[node name="ScrewHead" type="MeshInstance3D" parent="." unique_id=1101713384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08479228, 0)
+mesh = SubResource("CylinderMesh_j02se")

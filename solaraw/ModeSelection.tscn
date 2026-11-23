@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://e3noy7hlnlah"]
+
+[ext_resource type="Script" uid="uid://wca551qi6b58" path="res://ModeSelection.gd" id="1_wef6y"]
+
+[node name="ModeSelection" type="Control" unique_id=1124758675]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wef6y")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=481902215]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.13725491, 0.19607843, 1)
+
+[node name="BtnBack" type="Button" parent="." unique_id=573831218]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 101.0
+offset_right = 155.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 24
+text = "<BACK"
+
+[node name="HeaderLabel" type="Label" parent="." unique_id=1820918092]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -355.0
+offset_top = 173.0
+offset_right = 406.0
+offset_bottom = 263.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 65
+text = "SELECT TRAINING MODE"
+
+[node name="CardsContainer" type="HBoxContainer" parent="." unique_id=1755319310]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -524.5
+offset_top = -35.5
+offset_right = 524.5
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="GuideCard" type="Button" parent="CardsContainer" unique_id=1040659584]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 45
+text = "Guided Simulation Mode
+"
+
+[node name="FreeCard" type="Button" parent="CardsContainer" unique_id=73342780]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 45
+text = "Free Simulation Mode"
